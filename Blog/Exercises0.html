@@ -4,6 +4,16 @@
     
 	<script>
     var themeHasJQuery = !!window.jQuery;
+	function delegate(id){
+		  $("#hint_" + id + "_button").click(function(){
+			$("#ph" + id).slideToggle();
+		  });
+		};
+		$(document).ready(function(){
+			for (let i = 1; i < 8; i++) {
+				delegate(i);
+			};
+		});
 </script>
 <script type="text/javascript" src="../assets/js/jquery.js?1.0.760"></script>
 <script>
