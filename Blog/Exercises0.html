@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html dir="ltr">
 <head>
-    
+    <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
 	<script>
     var themeHasJQuery = !!window.jQuery;
 	function delegate(id){
-		  $("#hint_" + id + "_button").click(function(){
-			$("#ph" + id).slideToggle();
-		  });
+	  $("#hint_" + id + "_button").click(function(){
+		$("#ph" + id).slideToggle();
+	  });
+	};
+	$(document).ready(function(){
+		for (let i = 1; i < 8; i++) {
+			delegate(i);
 		};
-		$(document).ready(function(){
-			for (let i = 1; i < 8; i++) {
-				delegate(i);
-			};
-		});
+	});
 </script>
 <script type="text/javascript" src="../assets/js/jquery.js?1.0.760"></script>
 <script>
@@ -248,19 +248,6 @@
  col-xs-12">
     <div class="bd-layoutcolumn-107 bd-no-margins bd-column" ><div class="bd-vertical-align-wrapper"><div class=" bd-customhtml-14 bd-tagstyles">
     <div class="bd-container-inner bd-content-element">
-        <script>
-		function delegate(id){
-		  $("#hint_" + id + "_button").click(function(){
-			$("#ph" + id).slideToggle();
-		  });
-		};
-		$(document).ready(function(){
-			for (let i = 1; i < 8; i++) {
-				delegate(i);
-			};
-		});
-</script>
-
 
 <h2>Exercises #0</h2>
 <p>Time to practice!</p>
