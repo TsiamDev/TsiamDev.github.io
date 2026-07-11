@@ -1,4 +1,7 @@
 User-agent: *
 Allow: /
+Disallow: /admin/
+Disallow: /private/
+Disallow: /temp/
 
-Sitemap: http://localhost:5173/robots.txt/sitemap.xml
+Sitemap: https://tsiamdev.github.io//sitemap.xml
